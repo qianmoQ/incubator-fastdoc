@@ -10,7 +10,6 @@
         <module>core/service</module>
         <module>core/server</module>
         <module>core/common</module>
-        <module>core/web</module>
     </modules>
 
     <name>fastdoc</name>

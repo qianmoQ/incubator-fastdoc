@@ -4,3 +4,30 @@
 target/
 .idea/
 .mvn/
+
+### Web ###
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+/core/web/.vscode/*
+/core/web/.idea
+/core/web/.DS_Store
+/core/web/*.suo
+/core/web/*.ntvs*
+/core/web/*.njsproj
+/core/web/*.sln
+/core/web/*.sw?
+/core/web/yarn.lock
+/core/web/.vscode/
