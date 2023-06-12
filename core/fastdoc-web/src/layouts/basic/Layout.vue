@@ -9,7 +9,7 @@
         <FastDocLayoutContent>
         </FastDocLayoutContent>
       </el-main>
-      <el-footer>
+      <el-footer style="padding: 0;">
         <FastDocLayoutFooter>
         </FastDocLayoutFooter>
       </el-footer>
