@@ -1,12 +1,18 @@
 <template>
-  <div class="common-layout">
+  <div>
     <el-container>
-      <FastDocLayoutHeader>
-      </FastDocLayoutHeader>
-      <FastDocLayoutContent>
-      </FastDocLayoutContent>
-      <FastDocLayoutFooter>
-      </FastDocLayoutFooter>
+      <el-header style="padding: 0;">
+        <FastDocLayoutHeader>
+        </FastDocLayoutHeader>
+      </el-header>
+      <el-main>
+        <FastDocLayoutContent>
+        </FastDocLayoutContent>
+      </el-main>
+      <el-footer>
+        <FastDocLayoutFooter>
+        </FastDocLayoutFooter>
+      </el-footer>
     </el-container>
   </div>
 </template>
@@ -15,12 +21,10 @@
 import FastDocLayoutHeader from '@/layouts/basic/components/LayoutHeader.vue'
 import FastDocLayoutContent from '@/layouts/basic/components/LayoutContent.vue'
 import FastDocLayoutFooter from '@/layouts/basic/components/LayoutFooter.vue'
-import { ElContainer } from 'element-plus'
 
 export default {
   name: 'FastDocLayoutContainer',
   components: {
-    ElContainer,
     FastDocLayoutHeader,
     FastDocLayoutContent,
     FastDocLayoutFooter

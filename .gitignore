@@ -21,13 +21,13 @@ dist-ssr
 *.local
 
 # Editor directories and files
-/core/web/.vscode/*
-/core/web/.idea
-/core/web/.DS_Store
-/core/web/*.suo
-/core/web/*.ntvs*
-/core/web/*.njsproj
-/core/web/*.sln
-/core/web/*.sw?
-/core/web/yarn.lock
-/core/web/.vscode/
+/core/fastdoc-web/.vscode/*
+/core/fastdoc-web/.idea
+/core/fastdoc-web/.DS_Store
+/core/fastdoc-web/*.suo
+/core/fastdoc-web/*.ntvs*
+/core/fastdoc-web/*.njsproj
+/core/fastdoc-web/*.sln
+/core/fastdoc-web/*.sw?
+/core/fastdoc-web/yarn.lock
+/core/fastdoc-web/.vscode/

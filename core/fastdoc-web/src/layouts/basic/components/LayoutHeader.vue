@@ -1,18 +1,32 @@
 <template>
   <div>
-    <el-header>
-      Header
-    </el-header>
+    <el-menu mode="horizontal"
+             :default-active="defaultActiveMenu"
+             :ellipsis="false">
+      <el-menu-item>
+        FastDoc
+      </el-menu-item>
+      <el-menu-item index="home" route="/">
+        <template #title>
+          <el-icon>
+            <HomeFilled/>
+          </el-icon>
+          <span>首页</span>
+        </template>
+      </el-menu-item>
+      <div class="flex-grow"/>
+    </el-menu>
   </div>
 </template>
 
 <script lang="ts">
-import { ElHeader } from 'element-plus'
 
 export default {
   name: 'FastDocLayoutHeader',
-  components: {
-    ElHeader
+  data () {
+    return {
+      defaultActiveMenu: 'home'
+    }
   }
 }
 </script>

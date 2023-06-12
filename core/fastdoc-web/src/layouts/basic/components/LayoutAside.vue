@@ -7,12 +7,7 @@
 </template>
 
 <script lang="ts">
-import { ElAside } from 'element-plus'
-
 export default {
-  name: 'FastDocLayoutAside',
-  components: {
-    ElAside
-  }
+  name: 'FastDocLayoutAside'
 }
 </script>
