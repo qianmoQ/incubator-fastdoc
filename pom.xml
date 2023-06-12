@@ -7,9 +7,9 @@
     <version>1.0.0-SNAPSHOT</version>
 
     <modules>
-        <module>core/service</module>
-        <module>core/server</module>
-        <module>core/common</module>
+        <module>core/fastdoc-common</module>
+        <module>core/fastdoc-service</module>
+        <module>core/fastdoc-server</module>
     </modules>
 
     <name>fastdoc</name>
