@@ -2,4 +2,4 @@
 
 ---
 
-FastDoc is a set of rapid construction of enterprise-level Wiki｜document service system.
+FastDoc是一套快速构建的企业级Wiki｜文档服务系统。
