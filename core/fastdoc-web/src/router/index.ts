@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import LayoutContainer from '@/layouts/basic/Layout.vue'
 
 const routes: Array<RouteRecordRaw> = [
@@ -8,6 +8,17 @@ const routes: Array<RouteRecordRaw> = [
     component: LayoutContainer
   },
   {
+    path: '/auth',
+    component: LayoutContainer,
+    children: [
+      {
+        name: 'login',
+        path: 'login',
+        component: () => import('@/views/common/auth/AuthLogin.vue')
+      }
+    ]
+  },
+  {
     path: '/about',
     name: 'about',
     component: () => import(/* webpackChunkName: "about" */ '@/views/AboutView.vue')
@@ -15,7 +26,7 @@ const routes: Array<RouteRecordRaw> = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHashHistory(),
   routes
 })
 

@@ -1,6 +1,7 @@
 <template>
   <div>
     <el-menu mode="horizontal"
+             router
              :default-active="defaultActiveMenu"
              :ellipsis="false">
       <el-menu-item>
@@ -23,7 +24,7 @@
           <span>注册</span>
         </template>
       </el-menu-item>
-      <el-menu-item route="login">
+      <el-menu-item index="/auth/login">
         <template #title>
           <el-icon>
             <font-awesome-icon :icon="['fas', 'right-to-bracket']" />
